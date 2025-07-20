@@ -1,35 +1,35 @@
-# Portfólio de Projetos - Felipe Januário
+# 🚀 Portfólio – Felipe Januario Alves
 
-Bem-vindo ao meu portfólio de projetos! Aqui você encontra uma coleção dos meus trabalhos organizados por categorias: Web, Mobile e Back-End. Cada projeto foi desenvolvido com foco em boas práticas, responsividade e performance.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **HTML5** — estrutura semântica e acessível
-- **CSS3** — estilos modernos, responsivos e animações
-- **JavaScript (ES6+)** — interatividade, DOM manipulation e lógica
-- **Node.js** — backend JavaScript, servidor rápido e escalável
-- **Express.js** — framework minimalista para API REST e rotas
-- **Git & GitHub** — controle de versão e hospedagem do código
-- **Netlify** — deploy rápido e confiável para projetos front-end
-- **VS Code** — editor de código com extensões para produtividade
-- **Figma** — prototipagem e design UI/UX
-- **GitHub Actions (CI/CD)** — automação de build e deploy (planejado)
-- **SEO** — otimização para motores de busca
-- **Acessibilidade (ARIA)** — preocupação para usuários com necessidades especiais
+Portfolio profissional desenvolvido em HTML, CSS e JavaScript, com design moderno e responsivo. Apresenta seções sobre mim, habilidades, projetos e integração com envio de e-mail via backend (Node.js + Nodemailer).
 
 ---
 
-## 📂 Estrutura do Repositório
+## 🛠️ Tecnologias utilizadas
 
-- `/assets/` — imagens, vídeos e ícones usados nos projetos
-- `/css/` — arquivos CSS para estilização
-- `/js/` — scripts JavaScript para interatividade
-- `/projetos/` — código fonte dos projetos organizados por stack
-- `index.html` — página principal do portfólio
-- `projeto.html` — página dedicada aos projetos, separada por categorias
+- **HTML5 & CSS3** (mobile-first, Flexbox, Grid)
+- **JavaScript puro** (menu, modal, fetch, animações)
+- **AOS** para efeitos visuais (scroll animations)
+- **Backend (Node.js + Express + Nodemailer)** para envio de formulários
+- **FormSubmit (alternativa backend)**: gateway simples via HTML
+- **Hospedagem**: domínio próprio `felipejanuarioalves.com.br` (via Render / Railway / Vercel)
 
+---
+
+## 📁 Estrutura do projeto
+
+portifolioFelipeJanuarioAlves/
+├── client/ # Frontend (meu portfólio)
+│ ├── index.html
+│ ├── style.css
+│ ├── script.js
+│ └── assets/ # imagens, vídeos, PDF do currículo, etc.
+├── server/ # Backend para envio de formulário
+│ ├── server.js
+│ ├── nodemailer-config.js
+│ ├── package.json
+│ └── .env
+├── LICENSE
+└── README.md
 ---
 
 ## 🎯 Objetivos do Portfólio
@@ -74,3 +74,22 @@ Obrigado pela visita! Sinta-se à vontade para explorar os projetos e deixar fee
 ---
 
 *Feito com 💻 e ☕ por Felipe Januário*
+
+
+
+---
+
+## 🚀 Como rodar localmente (cliente)
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/felipejannuario/portifolioFelipeJanuarioAlves.git
+   cd portifolioFelipeJanuarioAlves/client
+
+   
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT — veja o arquivo [LICENSE](./LICENSE) para detalhes.
+
+
+

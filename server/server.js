@@ -1,13 +1,19 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const helmet = require("helmet");
 const transporter = require("./nodemailer-config");
 
 dotenv.config();
+
 const app = express();
+
+// Middlewares
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
+// Rota de envio de e-mail
 app.post("/send-email", async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -26,18 +32,8 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
+// Inicializa o servidor
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+  console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
 });
-
-const cors = require("cors");
-
-// Apenas permite seu domínio acessar
-app.use(cors({
-  origin: "https://www.felipejanuarioalves.com.br",
-}));
-const helmet = require("helmet");
-app.use(helmet());
-
-console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
