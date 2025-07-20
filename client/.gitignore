@@ -1,0 +1,40 @@
+# Node modules (não subir dependências)
+node_modules/
+
+# Ambiente (não subir dados sensíveis)
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor de código
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build frontend (se usar Vite, React, etc.)
+dist/
+build/
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.bak
+
+# Pasta de deploy local (caso use uploads temporários)
+uploads/
+
+# Arquivos de produção gerados
+*.tgz
+
+# Cache
+.cache/
+.next/
+out/
