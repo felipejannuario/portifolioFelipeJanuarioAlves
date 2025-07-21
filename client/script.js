@@ -13,8 +13,43 @@ window.addEventListener("click", (event) => {
 });
 
 // Formulário
-const form = document.querySelector(".formulario-fale-conosco");
+const form = document.getElementById("form-contato");
 const mascara = document.querySelector(".mascara-formulario");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  try {
+    const response = await fetch(
+      "http://localhost:5000/send-email",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      }
+    );
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("✅ Mensagem enviada com sucesso!");
+      form.reset();
+      esconderForm();
+    } else {
+      alert("❌ Erro ao enviar: " + result.error);
+    }
+  } catch (error) {
+    console.error(error);
+    alert("❌ Erro na requisição: " + error.message);
+  }
+});
 
 function mostrarForm() {
   form.style.left = "50%";
@@ -85,7 +120,6 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-
 function mostrarForm() {
   form.style.left = "50%";
   form.style.transform = "translateX(-50%)";
@@ -102,20 +136,20 @@ function esconderForm() {
   }, 500); // tempo igual ao transition
 }
 
-  const projectCards = document.querySelectorAll('.project-card');
+const projectCards = document.querySelectorAll(".project-card");
 
-  projectCards.forEach(card => {
-    const video = card.querySelector('.project-card-video');
+projectCards.forEach((card) => {
+  const video = card.querySelector(".project-card-video");
 
-    card.addEventListener('mouseenter', () => {
-      video.play();
-    });
-
-    card.addEventListener('mouseleave', () => {
-      video.pause();
-      video.currentTime = 0;
-    });
+  card.addEventListener("mouseenter", () => {
+    video.play();
   });
+
+  card.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
 
 // Portfólio - Filtro de projetos
 
@@ -123,19 +157,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll("nav button");
   const sections = document.querySelectorAll(".projects-section");
 
-  buttons.forEach(btn => {
+  buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       // Remove active de todos
-      buttons.forEach(b => b.classList.remove("active"));
+      buttons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
       const filter = btn.getAttribute("data-filter");
 
-      sections.forEach(section => {
+      sections.forEach((section) => {
         if (filter === "all") {
           section.style.display = "block";
         } else {
-          section.style.display = section.getAttribute("data-category") === filter ? "block" : "none";
+          section.style.display =
+            section.getAttribute("data-category") === filter ? "block" : "none";
         }
       });
     });

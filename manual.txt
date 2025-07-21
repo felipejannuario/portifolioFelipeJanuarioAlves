@@ -1,0 +1,23 @@
+🚀 Rodar o servidor automaticamente ao salvar 
+👉 Passo a passo:
+(Opcional) Automatiza com script no package.json:
+Se quiser deixar chique:
+
+json
+Copiar código
+"scripts": {
+  "dev": "nodemon server.js"
+}
+E aí roda com:
+
+bash
+Copiar código
+npm run dev
+
+🛑 Como parar o servidor
+Seja com node ou nodemon, pra parar o servidor rodando no terminal, é só usar:
+
+bash
+Copiar código
+CTRL + C
+Ele encerra a execução atual.
