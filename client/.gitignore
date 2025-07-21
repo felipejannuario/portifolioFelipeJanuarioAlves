@@ -4,6 +4,7 @@ node_modules/
 # Ambiente (não subir dados sensíveis)
 .env
 
+
 # Logs
 logs
 *.log

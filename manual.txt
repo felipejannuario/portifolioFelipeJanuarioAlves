@@ -21,3 +21,6 @@ bash
 Copiar código
 CTRL + C
 Ele encerra a execução atual.
+
+
+
