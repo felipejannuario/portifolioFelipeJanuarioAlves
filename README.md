@@ -75,6 +75,8 @@ Quer trocar uma ideia, colaborar ou dar aquele feedback?
 
 * 🔗 LinkedIn: [linkedin.com/in/felipejannuario](https://linkedin.com/in/felipejannuario)
 * 📧 Email: [felipejanuarioalves@outlook.com](mailto:felipejanuarioalves@outlook.com)
+* 💻 Email: [www.felipejanuarioalves.com.br](https://www.felipejanuarioalves.com.br/)
+
 
 ---
 
