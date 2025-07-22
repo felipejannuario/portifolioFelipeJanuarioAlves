@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  background: url('/client/img/images/fundopreto.avif');
+  background: url('/img/images/fundopreto.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ header {
 }
 
 .logo-nav {
-  background: url(https://img.freepik.com/vetores-gratis/fundo-preto-com-foco-de-luz_1017-27230.jpg) center;
+  background: url('/img/images/fundopreto.avif') no-repeat center center fixed;
   font-size: 1.7rem;
   font-weight: 600;
   cursor: default;
@@ -90,7 +90,7 @@ header {
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 800;
-  background: url('/client/img/images/fundopreto.avif') center;
+   background: url('/img/images/fundopreto.avif') no-repeat center center fixed;
   background-size: cover;
   background-clip: text;
   /* -webkit-background-clip: text; */
@@ -424,7 +424,7 @@ header {
 }
 
 .card-front {
-  background: url('/client/img/images/fundopreto.avif') center;
+  background: url('/img/images/fundopreto.avif') center;
 }
 
 .card-front video {
