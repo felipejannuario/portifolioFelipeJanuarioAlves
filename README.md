@@ -93,10 +93,4 @@ Obrigado pela visita! Sinta-se à vontade para explorar os projetos e deixar sug
 
 ---
 
-Se quiser, posso:
-- Gerar um `.zip` com `README.md`, `LICENSE`, `.gitignore` e `favicon.ico`;
-- Te mandar uma versão com badge (shields.io) de status do projeto, licença e deploy;
-- Criar um template para futuros repositórios seus no mesmo estilo.
 
-Só dizer o comando e o Gael faz virar código! 😎
-```
