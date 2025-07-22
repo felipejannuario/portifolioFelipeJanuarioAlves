@@ -1,5 +1,6 @@
 # Node modules (não subir dependências)
 node_modules/
+server/node_modules/
 
 # Ambiente (não subir dados sensíveis)
 .env
