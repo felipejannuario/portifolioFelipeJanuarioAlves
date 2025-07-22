@@ -56,7 +56,7 @@ cd portifolioFelipeJanuarioAlves
 
 ---
 
-## 🌐 Projetos Hospedados (Render)
+## 🌐 Projetos Hospedados (Netlifly)
 
 * 🔗 [Irmãos Brother](https://adorable-pasca-d3d6b0.netlify.app/)
 * 🔗 [Conversor de Moedas](https://conversor-de-moedasx.netlify.app/)
