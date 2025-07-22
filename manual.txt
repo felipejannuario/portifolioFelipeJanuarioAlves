@@ -1,27 +1,15 @@
-🚀 Rodar o servidor automaticamente ao salvar 
-👉 Passo a passo:
-(Opcional) Automatiza com script no package.json:
-Se quiser deixar chique:
+# 🧠 Manual de Uso - Portfólio
 
-json
-Copiar código
-"scripts": {
-  "dev": "nodemon server.js"
-}
-E aí roda com:
+## ✅ Como visualizar o projeto
 
-bash
-Copiar código
-npm run dev
+Acesse diretamente o site:  
+👉 [www.felipejanuarioalves.com.br](https://www.felipejanuarioalves.com.br)
 
-🛑 Como parar o servidor
-Seja com node ou nodemon, pra parar o servidor rodando no terminal, é só usar:
+Ou clone o repositório e abra o `index.html` no navegador:
 
-bash
-Copiar código
-CTRL + C
-Ele encerra a execução atual.
-
-
+```bash
+git clone https://github.com/felipejannuario/portifolioFelipeJanuarioAlves.git
+cd portifolioFelipeJanuarioAlves
+start index.html
 
 

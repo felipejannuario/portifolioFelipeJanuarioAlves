@@ -1,0 +1,13 @@
+
+---
+
+### ✅ 4. `favicon.ico`
+
+Você pode usar um site como [https://favicon.io/](https://favicon.io/) para gerar um `.ico` a partir de uma imagem (tipo tua logo pessoal ou iniciais "FJ"). Depois:
+
+1. Baixa o arquivo `.ico`.
+2. Renomeia para `favicon.ico`.
+3. Coloca na raiz do projeto ou dentro de `img/` (desde que referenciado certo no `<head>` do HTML):
+
+```html
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
