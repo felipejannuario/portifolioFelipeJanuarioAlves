@@ -90,7 +90,7 @@ header {
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 800;
-   background: url('/img/fundopreto.avif') no-repeat center center fixed;
+  background: url('/img/fundopreto.avif') no-repeat center center fixed;
   background-size: cover;
   background-clip: text;
   /* -webkit-background-clip: text; */
@@ -248,7 +248,7 @@ header {
 }
 
 .modal-content {
-  background-color: var(--color-05);
+  background: url('/img/fundopreto.avif') no-repeat center center fixed;
   margin: 10% auto;
   padding: 20px;
   border-radius: 10px;
@@ -287,6 +287,8 @@ header {
   background-color: #82c7ff;
   box-shadow: 0 0 20px #4ea1ffcc;
 }
+
+
 
 
 /* =========================

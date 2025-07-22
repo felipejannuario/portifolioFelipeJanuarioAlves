@@ -131,3 +131,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const btnFechar = document.getElementById('btnFecharModal');
+const modalFecha = document.getElementById('fechaModal');
+
+btnFechar.addEventListener('click', () => {
+  modalFecha.style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+  if (e.target === modalFecha) {
+    modalFecha.style.display = 'none';
+  }
+});
