@@ -1,4 +1,4 @@
-// Curriculo - Modal
+// Modal do Currículo
 const modal = document.getElementById("curriculoModal");
 const openModalBtn = document.getElementById("openModalBtn");
 const closeModalSpan = document.querySelector(".close");
@@ -12,7 +12,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// Formulário
+// Formulário - mostrar/ocultar com máscara
 const form = document.querySelector(".formulario-fale-conosco");
 const mascara = document.querySelector(".mascara-formulario");
 
@@ -20,49 +20,73 @@ function mostrarForm() {
   form.style.left = "50%";
   form.style.transform = "translateX(-50%)";
   mascara.style.visibility = "visible";
+  mascara.style.opacity = "1";
 }
 
 function esconderForm() {
-  form.style.left = "-300px";
+  form.style.left = "-550px";
   form.style.transform = "translateX(0)";
-  mascara.style.visibility = "hidden";
+  mascara.style.opacity = "0";
+  setTimeout(() => {
+    mascara.style.visibility = "hidden";
+  }, 500); // mesma duração da transição
 }
 
 // Áudio
 function ajustarVolume(volume) {
   const audio = document.getElementById("myAudio");
-  audio.volume = volume;
+  if (audio) audio.volume = volume;
 }
 ajustarVolume(0.5);
 
-// Portfólio - Vídeos hover e otimização com IntersectionObserver
-const cards = document.querySelectorAll(".card-projeto");
+// Project Cards - IntersectionObserver + Hover
+const projectCards = document.querySelectorAll(".project-card");
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      const video = entry.target.querySelector(".video-bg");
+      const video = entry.target.querySelector(".card-video");
+      if (!video) return;
+
       if (entry.isIntersecting) {
-        entry.target.addEventListener("mouseenter", () => video.play());
-        entry.target.addEventListener("mouseleave", () => {
-          video.pause();
-          video.currentTime = 0;
-        });
+        video.play();
       } else {
         video.pause();
         video.currentTime = 0;
       }
     });
   },
-  {
-    threshold: 0.5,
-  }
+  { threshold: 0.5 }
 );
 
-cards.forEach((card) => observer.observe(card));
+projectCards.forEach((card) => {
+  const video = card.querySelector(".card-video");
+  if (!video) return;
 
-// Serviços - Expandir/Colapsar cards
+  card.addEventListener("mouseenter", () => video.play());
+  card.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
 
+  observer.observe(card);
+});
+
+// Service Cards - Hover simples
+const serviceCards = document.querySelectorAll(".card-flip");
+
+serviceCards.forEach((card) => {
+  const video = card.querySelector(".card-video");
+  if (!video) return;
+
+  card.addEventListener("mouseenter", () => video.play());
+  card.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
+
+// Serviços - Expandir/Colapsar cards (caso use)
 const readMoreLinks = document.querySelectorAll(".read-more");
 
 readMoreLinks.forEach((link) => {
@@ -78,6 +102,7 @@ readMoreLinks.forEach((link) => {
   });
 });
 
+// Menu Mobile
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
@@ -85,58 +110,23 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-function mostrarForm() {
-  form.style.left = "50%";
-  form.style.transform = "translateX(-50%)";
-  mascara.style.visibility = "visible";
-  mascara.style.opacity = "1";
-}
-
-function esconderForm() {
-  form.style.left = "-550px";
-  form.style.transform = "translateX(0)";
-  mascara.style.opacity = "0";
-  setTimeout(() => {
-    mascara.style.visibility = "hidden";
-  }, 500); // tempo igual ao transition
-}
-
-const projectCards = document.querySelectorAll(".project-card");
-
-projectCards.forEach((card) => {
-  const video = card.querySelector(".project-card-video");
-
-  card.addEventListener("mouseenter", () => {
-    video.play();
-  });
-
-  card.addEventListener("mouseleave", () => {
-    video.pause();
-    video.currentTime = 0;
-  });
-});
-
-// Portfólio - Filtro de projetos
-
+// Filtro de projetos (projeto.html)
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll("nav button");
   const sections = document.querySelectorAll(".projects-section");
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      // Remove active de todos
       buttons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
       const filter = btn.getAttribute("data-filter");
 
       sections.forEach((section) => {
-        if (filter === "all") {
-          section.style.display = "block";
-        } else {
-          section.style.display =
-            section.getAttribute("data-category") === filter ? "block" : "none";
-        }
+        section.style.display =
+          filter === "all" || section.getAttribute("data-category") === filter
+            ? "block"
+            : "none";
       });
     });
   });

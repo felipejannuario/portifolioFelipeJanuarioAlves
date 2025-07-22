@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Felipe Januario</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" href="/img/images/Felipe  pose 2.png" type="image/png" />
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="icon" href="./img/Felipe pose 02.png" type="image/logo" />
 </head>
 
 <body>
@@ -135,7 +135,7 @@
       </div>
 
       <div class="home-img">
-        <img src="/img/images/Felipe pose1.png" alt="Profile picture" />
+        <img src="/img/Felipe pose 01.png" alt="Profile picture" />
       </div>
     </section>
 
@@ -154,13 +154,13 @@
         <div class="card-inner">
           <div class="card-front">
             <video autoplay loop muted playsinline>
-              <source src="/img/video/cardPortifolio-web.mp4" type="video/mp4">
+              <source src="/video/cardPortifolio-web.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-back">
             <h3 class="bg-text">WEB <br>DEVELOPMENT</h3>
             <p>Modern websites built with performance, SEO, and clean code in mind.</p>
-            <button>SEE MORE</button>
+            <!-- <button>SEE MORE</button> -->
           </div>
         </div>
       </div>
@@ -170,13 +170,13 @@
         <div class="card-inner">
           <div class="card-front">
             <video autoplay loop muted playsinline>
-              <source src="/img/video/cardPortifolio-mobile.mp4" type="video/mp4">
+              <source src="/video/cardPortifolio-mobile.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-back">
             <h3 class="bg-text">MOBILE DEVELOPMENT</h3>
             <p>Intuitive mobile apps that combine design and speed across all devices.</p>
-            <button>SEE MORE</button>
+            <!-- <button>SEE MORE</button> -->
           </div>
         </div>
       </div>
@@ -186,13 +186,13 @@
         <div class="card-inner">
           <div class="card-front">
             <video autoplay loop muted playsinline>
-              <source src="/img/video/cardPortifolio-back-end.mp4" type="video/mp4">
+              <source src="/video/cardPortifolio-back-end.mp4" type="video/mp4">
             </video>
           </div>
           <div class="card-back">
             <h3 class="bg-text">BACK-END DEVELOPMENT</h3>
             <p>Scalable APIs and secure systems ready for real-world demands.</p>
-            <button>SEE MORE</button>
+            <!-- <button>SEE MORE</button> -->
           </div>
         </div>
       </div>
@@ -209,9 +209,9 @@
       <div class="project-cards-container">
 
         <!-- CARD FRONT -->
-        <div class="project-card card--front">
-          <video class="project-card-video" muted loop playsinline preload="metadata">
-            <source src="/img/video/Front.mp4" type="video/mp4">
+        <div class="project-card">
+          <video class="project-card-video card-video" muted loop playsinline preload="metadata">
+            <source src="video/Front.mp4" type="video/mp4">
           </video>
           <div class="project-card-content">
             <i class='bx bx-code-alt project-icon'></i>
@@ -221,14 +221,14 @@
                 Responsive websites, interfaces, and experiences with seamless design and clean code.
               </p>
             </div>
-            <!-- <a href="/projeto.html" class="project-btn">SEE PROJECTS</a> -->
+            <a href="/projeto.html" class="project-btn">SEE PROJECTS</a>
           </div>
         </div>
 
         <!-- CARD MOBILE -->
-        <div class="project-card card--mobile">
-          <video class="project-card-video" muted loop playsinline preload="metadata">
-            <source src="/img/video/mobile.mp4" type="video/mp4">
+        <div class="project-card">
+          <video class="project-card-video card-video" muted loop playsinline preload="metadata">
+            <source src="video/mobile.mp4" type="video/mp4">
           </video>
           <div class="project-card-content">
             <i class='bx bx-mobile-alt project-icon'></i>
@@ -238,14 +238,14 @@
                 Native and hybrid apps built for speed, usability, and real-world performance.
               </p>
             </div>
-            <!-- <a href="/projeto.html" class="project-btn">SEE PROJECTS</a> -->
+            <a href="/projeto.html" class="project-btn">SEE PROJECTS</a>
           </div>
         </div>
 
         <!-- CARD BACK-END -->
-        <div class="project-card card--backend">
-          <video class="project-card-video" muted loop playsinline preload="metadata">
-            <source src="/img/video/back.mp4" type="video/mp4">
+        <div class="project-card">
+          <video class="project-card-video card-video" muted loop playsinline preload="metadata">
+            <source src="video/back.mp4" type="video/mp4">
           </video>
           <div class="project-card-content">
             <i class='bx bx-server project-icon'></i>
@@ -255,7 +255,7 @@
                 Robust APIs, optimized data, and server-side logic built for scale and security.
               </p>
             </div>
-            <!-- <a href="/projeto.html" class="project-btn">SEE PROJECTS</a> -->
+            <a href="/projeto.html" class="project-btn">SEE PROJECTS</a>
           </div>
         </div>
       </div>
@@ -268,7 +268,7 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="/img/images/Felipe pose1.png" alt="Profile" />
+        <img src="/img/Felipe pose 02.png" alt="Profile" />
       </div>
       <div class="about-content">
         <h1>Full-Stack <span>Developer</span></h1>
@@ -297,7 +297,7 @@
     <!-- Form Contato -->
     <form class="formulario-fale-conosco" action="https://formcarry.com/s/c2NY_nLdwf5" method="POST"
       enctype="multipart/form-data" target="_blank">
-      <h2>Contact <span>Me!</span></h2>
+      <h2 class="title-h2">Contact <span>Me!</span></h2>
       <div class="input-box">
         <input type="text" name="nome" placeholder="Seu nome" required>
       </div>
@@ -323,7 +323,7 @@
       <p class="footer__quote">"Clean code, hot coffee and big dreams.☕"</p>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

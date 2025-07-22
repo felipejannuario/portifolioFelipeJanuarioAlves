@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  background: url('/img/images/fundopreto.avif');
+  background: url('/img/fundopreto.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ header {
 }
 
 .logo-nav {
-  background: url('/img/images/fundopreto.avif') no-repeat center center fixed;
+  background: url('/img/fundopreto.avif') no-repeat center center fixed;
   font-size: 1.7rem;
   font-weight: 600;
   cursor: default;
@@ -90,7 +90,7 @@ header {
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 800;
-   background: url('/img/images/fundopreto.avif') no-repeat center center fixed;
+   background: url('/img/fundopreto.avif') no-repeat center center fixed;
   background-size: cover;
   background-clip: text;
   /* -webkit-background-clip: text; */
@@ -424,7 +424,7 @@ header {
 }
 
 .card-front {
-  background: url('/img/images/fundopreto.avif') center;
+  background: url('/img/fundopreto.avif') center;
 }
 
 .card-front video {
@@ -706,8 +706,17 @@ header {
   z-index: 999;
 }
 
+.title-h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  }
+
 input {
   height: 40px;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid gray;
   padding-left: 5px;
@@ -964,7 +973,7 @@ form textarea {
 .hamburger .bar {
   width: 25px;
   height: 3px;
- background: url('/client/img/images/fundopreto.avif') center;
+ background: url('/img/fundopreto.avif') center;
   background-size: cover;
   border-radius: 3px;
   transition: 0.3s;
