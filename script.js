@@ -110,23 +110,26 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-// Filtro de projetos (projeto.html)
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll("nav button");
   const sections = document.querySelectorAll(".projects-section");
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
+      // Remove active de todos os botões
       buttons.forEach((b) => b.classList.remove("active"));
+      // Adiciona active no botão clicado
       btn.classList.add("active");
 
       const filter = btn.getAttribute("data-filter");
 
       sections.forEach((section) => {
-        section.style.display =
-          filter === "all" || section.getAttribute("data-category") === filter
-            ? "block"
-            : "none";
+        const category = section.getAttribute("data-category");
+        if (filter === "all" || filter === category) {
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
       });
     });
   });

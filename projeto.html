@@ -115,7 +115,7 @@
     </section>
   </main>
 
-  <script src="projeto.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
@@ -336,4 +336,29 @@ footer {
 
 
 </style>
-<script src="script.js"></script>
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll("nav button");
+  const sections = document.querySelectorAll(".projects-section");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Remove active de todos os botões
+      buttons.forEach((b) => b.classList.remove("active"));
+      // Adiciona active no botão clicado
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+
+      sections.forEach((section) => {
+        const category = section.getAttribute("data-category");
+        if (filter === "all" || filter === category) {
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
