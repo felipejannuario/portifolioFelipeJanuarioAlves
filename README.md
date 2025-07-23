@@ -56,7 +56,7 @@ cd portifolioFelipeJanuarioAlves
 
 ---
 
-## 🌐 Projetos Hospedados (Netlify)
+## 🌐 Projetos Hospedados (Netlifly)
 
 * 🔗 [Irmãos Brother](https://adorable-pasca-d3d6b0.netlify.app/)
 * 🔗 [Conversor de Moedas](https://conversor-de-moedasx.netlify.app/)
@@ -75,6 +75,8 @@ Quer trocar uma ideia, colaborar ou dar aquele feedback?
 
 * 🔗 LinkedIn: [linkedin.com/in/felipejannuario](https://linkedin.com/in/felipejannuario)
 * 📧 Email: [felipejanuarioalves@outlook.com](mailto:felipejanuarioalves@outlook.com)
+* 💻 Email: [www.felipejanuarioalves.com.br](https://www.felipejanuarioalves.com.br/)
+
 
 ---
 
@@ -93,10 +95,4 @@ Obrigado pela visita! Sinta-se à vontade para explorar os projetos e deixar sug
 
 ---
 
-Se quiser, posso:
-- Gerar um `.zip` com `README.md`, `LICENSE`, `.gitignore` e `favicon.ico`;
-- Te mandar uma versão com badge (shields.io) de status do projeto, licença e deploy;
-- Criar um template para futuros repositórios seus no mesmo estilo.
 
-Só dizer o comando e o Gael faz virar código! 😎
-```
