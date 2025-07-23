@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,9 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="./img/Felipe pose 02.png" type="image/logo" />
   <title>Meus Projetos | Felipe Januário</title>
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- CSS -->
   <link rel="stylesheet" href="projeto.css" />
 </head>
 
@@ -116,245 +115,244 @@
 
 </html>
 <style>
-    /* Reset básico (caso não tenha reset.css) */
+  /* Reset básico (caso não tenha reset.css) */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-:root {
-  --main-color: #096d75;
-  --text-color: #ffffff;
-  --bg-color-01: #1f242d;
-  --bg-color-02: #323946;
-  --color-00: #0000001a;
-  --color-01: #999999;
-  --color-02: #009539;
-  --color-03: #7950f2;
-  --color-04: #c00000;
-  --color-05: #232323;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  :root {
+    --main-color: #096d75;
+    --text-color: #ffffff;
+    --bg-color-01: #1f242d;
+    --bg-color-02: #323946;
+    --color-00: #0000001a;
+    --color-01: #999999;
+    --color-02: #009539;
+    --color-03: #7950f2;
+    --color-04: #c00000;
+    --color-05: #232323;
+  }
 
-body {
-  background: url('/img/fundopreto.avif') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
-  padding: 20px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-/* Botão de voltar */
-.voltar {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #096d75;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
-  margin-bottom: 20px;
-}
+  body {
+    background: url('/img/fundopreto.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+  }
 
-.voltar:hover {
-  background-color: #074e55;
-}
+  /* Botão de voltar */
+  .voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #096d75;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+  }
 
-/* Header */
-header {
-  background-color: var(--color-05);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-}
+  .voltar:hover {
+    background-color: #074e55;
+  }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: var(--main-color);
-}
+  /* Header */
+  header {
+    background-color: var(--color-05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
 
-header span {
-  color: var(--text-color);
-  text-shadow: none;
-}
-
-
-/* Filtros de categoria */
-nav {
-  margin-top: 10px;
-}
-
-nav button {
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 8px 15px;
-  margin: 5px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-nav button:hover,
-nav button.active {
-  background-color: #fff;
-  color: #096d75;
-}
-
-/* Seções de projetos */
-.projects-section {
-  margin-bottom: 40px;
-}
-
-.projects-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #00ffff;
-  padding-bottom: 8px;
-  color: #00ffff;
-}
-
-/* Grid dos cards */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-/* Card do projeto */
-.project-card {
-  background-color: #232323;
-  color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  transition: 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-}
-
-.project-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #00ffff;
-}
-
-.project-card p {
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.project-card a {
-  display: inline-block;
-  padding: 8px 14px;
-  background-color: #00ffff;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.project-card a:hover {
-  background-color: #00c6c6;
-}
-
-/* Footer */
-footer {
-  background-color: #074e55;
-  color: #eee;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--main-color);
+  }
+
+  header span {
+    color: var(--text-color);
+    text-shadow: none;
+  }
+
+
+  /* Filtros de categoria */
+  nav {
+    margin-top: 10px;
   }
 
   nav button {
-    padding: 6px 12px;
-    margin: 4px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
   }
-}
 
-@media (max-width: 480px) {
+  nav button:hover,
+  nav button.active {
+    background-color: #fff;
+    color: #096d75;
+  }
+
+  /* Seções de projetos */
+  .projects-section {
+    margin-bottom: 40px;
+  }
+
+  .projects-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 8px;
+    color: #00ffff;
+  }
+
+  /* Grid dos cards */
   .projects-container {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
   }
 
-  .voltar {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-
+  /* Card do projeto */
   .project-card {
-    padding: 15px;
+    background-color: #232323;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
   }
-}
 
-.voltar-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #096d75;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
-  margin-bottom: 20px;
-}
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
 
-.voltar-btn:hover {
-  background-color: #074e55;
-}
+  .project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #00ffff;
+  }
 
+  .project-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
 
+  .project-card a {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+
+  .project-card a:hover {
+    background-color: #00c6c6;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #074e55;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav button {
+      padding: 6px 12px;
+      margin: 4px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-container {
+      grid-template-columns: 1fr;
+    }
+
+    .voltar {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+
+    .project-card {
+      padding: 15px;
+    }
+  }
+
+  .voltar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #096d75;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .voltar-btn:hover {
+    background-color: #074e55;
+  }
 </style>
 <script>
- document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll("nav button");
-  const sections = document.querySelectorAll(".projects-section");
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("nav button");
+    const sections = document.querySelectorAll(".projects-section");
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // Remove active de todos os botões
-      buttons.forEach((b) => b.classList.remove("active"));
-      // Adiciona active no botão clicado
-      btn.classList.add("active");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Remove active de todos os botões
+        buttons.forEach((b) => b.classList.remove("active"));
+        // Adiciona active no botão clicado
+        btn.classList.add("active");
 
-      const filter = btn.getAttribute("data-filter");
+        const filter = btn.getAttribute("data-filter");
 
-      sections.forEach((section) => {
-        const category = section.getAttribute("data-category");
-        if (filter === "all" || filter === category) {
-          section.style.display = "block";
-        } else {
-          section.style.display = "none";
-        }
+        sections.forEach((section) => {
+          const category = section.getAttribute("data-category");
+          if (filter === "all" || filter === category) {
+            section.style.display = "block";
+          } else {
+            section.style.display = "none";
+          }
+        });
       });
     });
   });
-});
 </script>
